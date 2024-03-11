@@ -1,8 +1,7 @@
-
-n: int 
-n = int(input("Ingrese un numero real: "))
-z: int 
-z = int(input("Ingrese otro numero real: "))
+n: float 
+n = float(input("Ingrese un numero real: "))
+z: float 
+z = float(input("Ingrese otro numero real: "))
 if (n%z) == 0:
     print("El numero " + str(n)+ " es multiplo de " + str(z))
 else:
