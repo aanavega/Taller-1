@@ -7,7 +7,7 @@ Realizado por Daniel Santiago Barrera y Ana Sofia Vega; a continuacion el taller
 
 ## Primer punto
 
-[![]([Whats-App-Image-2024-03-10-at-07-54-15.jpg](https://postimg.cc/6yP3t3fh))](h[Whats-App-Image-2024-03-10-at-07-54-15.jpg](https://postimg.cc/6yP3t3fh)ttp://)
+[![]([![Whats-App-Image-2024-03-10-at-07-54-15.jpg](https://i.postimg.cc/zGzRwHL4/Whats-App-Image-2024-03-10-at-07-54-15.jpg)](https://postimg.cc/6yP3t3fh))](http:/[![Whats-App-Image-2024-03-10-at-07-54-15.jpg](https://i.postimg.cc/zGzRwHL4/Whats-App-Image-2024-03-10-at-07-54-15.jpg)](https://postimg.cc/6yP3t3fh)/)
 
  ## Segundo punto
  - Explicacion:
