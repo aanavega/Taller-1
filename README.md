@@ -5,7 +5,7 @@ Realizado por Daniel Santiago Barrera y Ana Sofia Vega; a continuacion el taller
 1. Puntos pares: programa individual con extensión .py
 2. Puntos impares: programa en notebook de jupiter
 
-## Primer punto
+## Primer punto: # Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
 
 [![](<a href='https://postimg.cc/6yP3t3fh' target='_blank'><img src='https://i.postimg.cc/6yP3t3fh/Whats-App-Image-2024-03-10-at-07-54-15.jpg' border='0' alt='Whats-App-Image-2024-03-10-at-07-54-15'/></a>)](<a href='https://postimg.cc/6yP3t3fh' target='_blank'><img src='https://i.postimg.cc/6yP3t3fh/Whats-App-Image-2024-03-10-at-07-54-15.jpg' border='0' alt='Whats-App-Image-2024-03-10-at-07-54-15'/></a>) 
 
