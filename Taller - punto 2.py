@@ -1,12 +1,12 @@
-Primer_numero:float
-Segundo_numero:float
-Tercer_numero:float
-Primer_numero = input("Digite un primer numero real: ")
-Segundo_numero = input("Digite un segundo numero real: ")
-Tercer_numero = input("Digite un tercer numero real: ")
-if Primer_numero>Segundo_numero and Primer_numero>Tercer_numero:
-    print("El numero " + str(Primer_numero) + " es el numero mayor")
-elif Segundo_numero>Primer_numero and Segundo_numero>Tercer_codigo:
-        print("El numero " + str(Segundo_numero) + " es el numero mayor")
-elif Tercer_numero>Primer_numero and Tercer_numero>Segundo_numero:
-            print("El numero " + str(Tercer_numero) + " es el numero mayor")
+primer_numero:float
+segundo_numero:float
+tercer_numero:float
+primer_numero = input("Digite un primer numero real: ")
+segundo_numero = input("Digite un segundo numero real: ")
+tercer_numero = input("Digite un tercer numero real: ")
+if primer_numero>segundo_numero and primer_numero>tercer_numero:
+    print("El numero " + str(primer_numero) + " es el numero mayor")
+elif segundo_numero>primer_numero and segundo_numero>tercer_codigo:
+        print("El numero " + str(segundo_numero) + " es el numero mayor")
+elif tercer_numero>primer_numero and tercer_numero>segundo_numero:
+            print("El numero " + str(tercer_numero) + " es el numero mayor")
