@@ -9,4 +9,4 @@ if Primer_numero>Segundo_numero and Primer_numero>Tercer_numero:
 elif Segundo_numero>Primer_numero and Segundo_numero>Tercer_codigo:
         print("El numero " + str(Segundo_numero) + " es el numero mayor")
 elif Tercer_numero>Primer_numero and Tercer_numero>Segundo_numero:
-            print("El numero " + str(d) + " es el numero mayor")
+            print("El numero " + str(Tercer_numero) + " es el numero mayor")
