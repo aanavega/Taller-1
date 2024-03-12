@@ -15,7 +15,7 @@ Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el 
  
  - Explicacion:
    1) Definimos las tres variables, tres numeros reales (del tipo float).
-   2) Indicamos los condicionales con desigualdades para comparar cada uno de los numeros.
+   2) Indicamos los condicionales con desigualdades, con el fin de comparar cada uno de los numeros.
    4) Definimos cual de los tres valores reales es mayor.
       
  - Diagrama de flujo:
@@ -52,7 +52,7 @@ Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el 
    1) Definimos dos conjuntos: el conjunto vocales y el conjunto consonantes; y a su vez, definimos los elementos que los componen respectivamente.
    2) Definimos una variable 'letra'.
    3) Evaluamos si la variable 'letra' se encuentra en el conjunto vocales.
-   4) Si 'letra' se encuentra en el conjunto vocalea, la varaible es una vocal.
+   4) Si 'letra' se encuentra en el conjunto vocales, la variable es una vocal.
    5) Si no, no es una vocal.
 
  - Diagrama de flujo:
@@ -99,8 +99,9 @@ Escriba un programa que dada una distancia calcule:
 - El tiempo que le tomaría a Bolt recorrer la distancia.
 
  - Explicacion:
-   1) Definimos la variable (la distancia).
-   2) 
+   1) Definimos las variables (la distancia) un numero real (del tipo float) en metros.
+   2) Definimos las formulas para cada incongita, siguiendo distancia/velocidad (de la luz, del sonido, de un vehiculo comercial y de Bolt) respectivamente, en m/s.
+   3) Imprimimos los valores obtenidos de las operaciones con los mensajes correspondientes para cada incognita.
 
 
 
