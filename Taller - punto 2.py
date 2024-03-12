@@ -9,4 +9,4 @@ if primer_numero > segundo_numero and primer_numero > tercer_numero:
 elif segundo_numero > primer_numero and segundo_numero > tercer_numero:
         print("El numero " + str(segundo_numero) + " es el numero mayor")
 elif tercer_numero > primer_numero and tercer_numero > segundo_numero:
-          print("El numero " + str(tercer_numero) + " es el numero mayor")
+           print("El numero " + str(tercer_numero) + " es el numero mayor")
