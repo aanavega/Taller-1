@@ -17,7 +17,21 @@ Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el 
    1) Definimos las tres variables, tres numeros reales (del tipo float).
    2) Indicamos los condicionales con desigualdades, con el fin de comparar cada uno de los numeros.
    4) Definimos cual de los tres valores reales es mayor.
-      
+  
+    n:float
+    c:float
+    d:float
+    n = input("Digite un primer numero real: ")
+    c = input("Digite un segundo numero real: ")
+    d = input("Digite un tercer numero real: ")
+    if n>c and n>d:
+        print("El numero " + str(n) + " es el numero mayor")
+	elif c>n and c>d:
+        	print("El numero " + str(c) + " es el numero mayor")
+	elif d>n and d>c:
+            	print("El numero " + str(d) + " es el numero mayor")
+
+
  - Diagrama de flujo:
    [![](https://mermaid.ink/svg/pako:eNpVj0FrwzAMhf-K0KmDlkGPga2wJoFcdlh3i3sQsZIYHLk4NmMk-e-zt26w23tPn8TTgp3TjAX21n10I_kA76USeNk1YjrjHrKGw-EZzq3Eib0DuabsnLOybWTwPJOHKHAfeyabiTITVStPRkL2Vfb18saz0dGBZpDT4xF4hi6tnbaE1BlZX906tJX9vZcAM93IX_-Ai1nH_8B9PHwXbXa1kdx7_LFKkgbcY6InMjo9u-REYRh5YoVFkpp7ijYoVLIllGJwl0_psAg-8h7jTVPg0tDgacKiJzvz9gU90Gbl)](http://https://mermaid.ink/svg/pako:eNpVj0FrwzAMhf-K0KmDlkGPga2wJoFcdlh3i3sQsZIYHLk4NmMk-e-zt26w23tPn8TTgp3TjAX21n10I_kA76USeNk1YjrjHrKGw-EZzq3Eib0DuabsnLOybWTwPJOHKHAfeyabiTITVStPRkL2Vfb18saz0dGBZpDT4xF4hi6tnbaE1BlZX906tJX9vZcAM93IX_-Ai1nH_8B9PHwXbXa1kdx7_LFKkgbcY6InMjo9u-REYRh5YoVFkpp7ijYoVLIllGJwl0_psAg-8h7jTVPg0tDgacKiJzvz9gU90Gbl)
 
@@ -70,9 +84,12 @@ Escriba un programa que pida 5 números reales y calcule las siguientes operacio
 
    - Explicacion:
      1) Definimos las 5 variables, 5 numeros reales (del tipo float).
-     2) Hacemos un condicional para defimir el promedio de las variables ingresadas:  la suma de estas entre el numero de datos.
+     2) Hacemos un condicional para definir el promedio de las variables ingresadas:  la suma de estas entre el numero de datos.
      3) Realizamos otro condicional para definir el promedio multiplicativo: la raiz quinta (numero de datos) del producto de todos los valores.
-     4) 
+     4) Realizamos una serie de condicionales, con el fin de organizar los numeros de manera ascendente y descendente.
+     5) Definimos una variable (potencia) y le asignamos una operacion (Sacar potencia del mayor número elevado al menor número).
+     6) Definimos una ultima variable (raiz) y le asignamos una operacion (La raíz cúbica del menor número).
+        
  
  ## Octavo punto
  Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
