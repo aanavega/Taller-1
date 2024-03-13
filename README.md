@@ -17,19 +17,6 @@ Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el 
    1) Definimos las tres variables, tres numeros reales (del tipo float).
    2) Indicamos los condicionales con desigualdades, con el fin de comparar cada uno de los numeros.
    4) Definimos cual de los tres valores reales es mayor.
-  
-       < n:float
-       c:float
-       d:float
-       n = input("Digite un primer numero real: ")
-       c = input("Digite un segundo numero real: ")
-       d = input("Digite un tercer numero real: ")
-       if n>c and n>d:
-          print("El numero " + str(n) + " es el numero mayor")
-       elif c>n and c>d:
-      		print("El numero " + str(c) + " es el numero mayor")
-       elif d>n and d>c:
-            		print("El numero " + str(d) + " es el numero mayor") >
 
 
  - Diagrama de flujo:
