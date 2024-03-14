@@ -9,22 +9,26 @@ Realizado por Daniel Santiago Barrera y Ana Sofia Vega; a continuacion el taller
 1. Puntos pares: programa individual con extensión .py
 2. Puntos impares: programa en notebook de jupiter
 
+
 ## Primer punto:
 Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
 
-<a href='https://postimg.cc/5QggpvfW' target='_blank'><img src='https://i.postimg.cc/5QggpvfW/Whats-App-Image-2024-03-10-at-07-54-15.jpg' border='0' alt='Whats-App-Image-2024-03-10-at-07-54-15'/></a>
+[Whats-App-Image-2024-03-10-at-07-54-15.jpg](https://postimg.cc/5QggpvfW)
+
 
  ## Segundo punto
  Realice un programa que lea tres números reales y determine cuál es el mayor.
 
  ```Python
-    # Determinar que ingrese tres numeros reales
+    # Leer tres numeros reales
       primer_numero:float
       segundo_numero:float
       tercer_numero:float
       primer_numero = input("Digite un primer numero real: ")
       segundo_numero = input("Digite un segundo numero real: ")
       tercer_numero = input("Digite un tercer numero real: ")
+
+    # Evaluar las desigualdades de magnitud de cada numero
       if primer_numero > segundo_numero and primer_numero > tercer_numero:
           print("El numero " + str(primer_numero) + " es el numero mayor")
       elif segundo_numero > primer_numero and segundo_numero > tercer_numero:
@@ -39,16 +43,19 @@ Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el 
    2) Indicamos los condicionales con desigualdades, con el fin de comparar cada uno de los numeros.
    4) Definimos cual de los tres valores reales es mayor.
 
-
  - Diagrama de flujo:
    [![](https://mermaid.ink/svg/pako:eNpVj0FrwzAMhf-K0KmDlkGPga2wJoFcdlh3i3sQsZIYHLk4NmMk-e-zt26w23tPn8TTgp3TjAX21n10I_kA76USeNk1YjrjHrKGw-EZzq3Eib0DuabsnLOybWTwPJOHKHAfeyabiTITVStPRkL2Vfb18saz0dGBZpDT4xF4hi6tnbaE1BlZX906tJX9vZcAM93IX_-Ai1nH_8B9PHwXbXa1kdx7_LFKkgbcY6InMjo9u-REYRh5YoVFkpp7ijYoVLIllGJwl0_psAg-8h7jTVPg0tDgacKiJzvz9gU90Gbl)](http://https://mermaid.ink/svg/pako:eNpVj0FrwzAMhf-K0KmDlkGPga2wJoFcdlh3i3sQsZIYHLk4NmMk-e-zt26w23tPn8TTgp3TjAX21n10I_kA76USeNk1YjrjHrKGw-EZzq3Eib0DuabsnLOybWTwPJOHKHAfeyabiTITVStPRkL2Vfb18saz0dGBZpDT4xF4hi6tnbaE1BlZX906tJX9vZcAM93IX_-Ai1nH_8B9PHwXbXa1kdx7_LFKkgbcY6InMjo9u-REYRh5YoVFkpp7ijYoVLIllGJwl0_psAg-8h7jTVPg0tDgacKiJzvz9gU90Gbl)
+
 
  ## Tercer punto
  Realice un programa que lea un número entero y determine si es par o impar.
 
 ```Python
+# Leer un numero real
 numero_real : int
 numero_real = int(input("Ingrese un numero real: "))
+
+# Determinar si el residuo del numero entre 2 es 0
 if ((numero_real) % 2) == 0 :
     print("El numero " + str(numero_real) + " es par")
 else:
@@ -61,14 +68,18 @@ else:
    2) Si el residuo de este numero (n) entre 2 es 0, el numero es par.
    3) Si no es 0, es impar.
 
+
  ## Cuarto punto
  Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
 
 ```Python
+# Leer dos numeros reales
 primer_numero: float 
 primer_numero = float(input("Ingrese un numero real: "))
 segundo_numero: float 
 segundo_numero = float(input("Ingrese otro numero real: "))
+
+# Dterminar si el residuo del primer numero entre el segundo es 0
 if (primer_numero%segundo_numero) == 0:
     print("El numero " + str(primer_numero)+ " es multiplo de " + str(segundo_numero))
 else:
@@ -79,17 +90,21 @@ else:
    1) Definimos las dos variables, dos numeros reales (del tipo float).
    2) Hacemos un condicional, con el fin de definir si el residuo del primer numero entre el segundo numero es 0.
    3) Si es 0, si es multiplo, si no es 0, no es multiplo del segundo numero
+
   
  ## Quinto punto
  Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 
 ```Python
+# Leer tres numeros reales
 primer_real: float 
 primer_real = float(input("Ingrese un primer numero real: "))
 segundo_real: float 
 segundo_real = float(input("Ingrese un segundo numero real: "))
 tercer_real: float
 tercer_real = float(input("Ingrese un tercer numero real: "))
+
+# Determinar si la suma de los dos primeros es mayor, menor o igual que el tercer número
 if (primer_real+segundo_real) > tercer_real:
     print("La suma de los dos primeros numeros es mayor que " + str(tercer_real))
 elif (primer_real+segundo_real) < tercer_real:
@@ -103,13 +118,19 @@ elif (primer_real+segundo_real) == tercer_real:
    2) Hacemos una serie de condicionales teniendo en cuenta la suma de los dos primeros numeros.
    3) Esto con el fin de ver si el resultado de esta suma es mayor, menor o igual al tercer numero.
 
+
  ## Sexto punto
  Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
 
 ```Python
+# Definir dos conjuntos con sus elementos
 Vocales=["a","e","i","o","u"]
 Consonantes= ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
+
+# Leer una letra cauqluiera
 letra = input("ingrese una letra: ")
+
+# Determinar si la letra hace parte del conjunto Vocales
 if letra in Vocales:
     print("La letra " + str(letra)+ " es una vocal")
 elif x in Consonantes:
@@ -126,6 +147,7 @@ elif x in Consonantes:
  - Diagrama de flujo:
   [![](https://mermaid.ink/svg/pako:eNptkN1qwzAMhV9F-GoD9QUC22ANLYWym47dJL3QHKVx68iZY_dnbd999lYGg4EQ4ujTkdBZadewKlRr3UF35AO8lrXA891CjDbuPtcwmTzCtFpy8ATHdZKm31JZLWTjeSQPUQhs7uduijIDs-rNabI8PhAyGnQY86yT0QlJSPo7amywxQ12uMUdWuxRcMAP9DhiwD0e8Ign_MTsO8um8_MRBvaBhTUDWdBOtlGCg9uyp2tC5xm9rMylq5a3y8D8HNsQ8Aj7DK9_yRd3Mf-RIO4PXUtKoFD17HsyTfrcOSu1Ch33XKsilQ23FG2oVS3XhFIMbnUSrYrgI6OKQ0OBS0MbT70qWrIjX78A83GC1g)](http://https://mermaid.ink/svg/pako:eNptkN1qwzAMhV9F-GoD9QUC22ANLYWym47dJL3QHKVx68iZY_dnbd999lYGg4EQ4ujTkdBZadewKlRr3UF35AO8lrXA891CjDbuPtcwmTzCtFpy8ATHdZKm31JZLWTjeSQPUQhs7uduijIDs-rNabI8PhAyGnQY86yT0QlJSPo7amywxQ12uMUdWuxRcMAP9DhiwD0e8Ign_MTsO8um8_MRBvaBhTUDWdBOtlGCg9uyp2tC5xm9rMylq5a3y8D8HNsQ8Aj7DK9_yRd3Mf-RIO4PXUtKoFD17HsyTfrcOSu1Ch33XKsilQ23FG2oVS3XhFIMbnUSrYrgI6OKQ0OBS0MbT70qWrIjX78A83GC1g)
 
+
  ## Septimo punto
 Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
 - El promedio
@@ -137,20 +159,23 @@ Escriba un programa que pida 5 números reales y calcule las siguientes operacio
 - La raíz cúbica del menor número
 
 ```Python
+# Leer cinco numeros reales
 Primer_numero: int
 Segundo_numero : int
 Tercer_numero : int
 Cuarto_numero: int
 Quinto_numero : int
-mayor_numero:int
-menor_numero:int
-potencia:int
-raiz:int
 Primer_numero= int(input("Ingrese su primer numero real: "))
 Segundo_numero= int(input("Ingrese su segundo numero real: "))
 Tercer_numero= int(input("Ingrese su Tercer numero real: "))
 Cuarto_numero= int(input("Ingrese su Cuarto numero real: "))
 Quinto_numero= int(input("Ingrese su Quinto numero real: "))
+
+# Definir variables
+mayor_numero:int
+menor_numero:int
+potencia:int
+raiz:int
 
 # Sacar promedio
 Promedio= ((Primer_numero+Segundo_numero+Tercer_numero+Cuarto_numero+Quinto_numero)/5)
@@ -256,9 +281,12 @@ print(" La raiz cubica del menor numero es: " + str(raiz))
  Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
 
  ```Python
+
+# Leer un numero real
 Frecuencia_hz: float
 Frecuencia_hz = float(input("Ingrese una frecuencia de onda en hz: "))
 
+# Determinar a que rango del espectro electromagnético se encuentra el numero 
 if Frecuencia_hz > 30.0*(10**18):
     print('Se encuentra en el espectro electromagnetico de "rayos gamma"')
 elif 30.0*(10**18)> Frecuencia_hz > 30.0*(10**15):
@@ -296,13 +324,18 @@ elif 30*(10**3)> Frecuencia_hz:
    2) Hacemos una serie de condicionales utilizando if y elif, y empleando a su vez desigualdades con el fin de comparar el valor ingresado.
    3) De esta manera, podemos definir en que rango del espectro electromagnético se encuentra el valor ingresado.
 
+
 ## Noveno punto
 Escriba un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.
 
 ```Python
+# Determinar un conjunto con sus elementos
 paises = ["canada" , "estados unidos", "brasil" , "mexico", "argentina", "ecuador" , "venezuela", "colombia", "republica dominicana", "costa rica", "cuba", "puerto rico", "peru" , "chile" , "panama", "uruguay", "paraguay", "bolivia" , "panama", "guatemala" , "nicaragua"]
+
+# Leer un pais de America en minusculas
 nombre_pais = input("Ingrese el nombre de un pais de America en  minusculas: ")
 
+# Determinar si el pais ingresado se encuentra en el conjunto incial e imprimir su capital correspondiente
 if nombre_pais in paises:
     if nombre_pais == "mexico":
         print("ciudad de mexico")
@@ -354,8 +387,9 @@ else:
   2) Definimos una variable (el nombre del pais).
   3) Hacemos una serie de condicionales evaluando si la variable (nombre_pais) corresponde a un elemento del conjunto paises.
   4) Si si, asignamos la capital correspondiente al pais, como la impresion predeterminada del condicional. 
+ 
 
- ## Decimo punto
+## Decimo punto
 Escriba un programa que dada una distancia calcule:
 - El tiempo que le tomaría a la luz recorrer la distancia.
 - El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
@@ -363,8 +397,11 @@ Escriba un programa que dada una distancia calcule:
 - El tiempo que le tomaría a Bolt recorrer la distancia.
 
 ```Python
+# Leer un numero real, la distancia
 Distancia:float
 Distancia = float(input("Ingrese una distancia en metros: "))
+
+# Asignar y realizar la operacion determinada para cada caso
 Tiempo_Luz= Distancia/299792458
 Tiempo_Sonido = Distancia/343.2
 Tiempo_Vehiculo_Comercial = Distancia/141.111
