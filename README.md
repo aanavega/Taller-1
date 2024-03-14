@@ -13,7 +13,7 @@ Realizado por Daniel Santiago Barrera y Ana Sofia Vega; a continuacion el taller
 ## Primer punto:
 Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
 
-[Whats-App-Image-2024-03-10-at-07-54-15.jpg](https://postimg.cc/5QggpvfW)
+<a href='https://postimg.cc/5QggpvfW' target='_blank'><img src='https://i.postimg.cc/5QggpvfW/Whats-App-Image-2024-03-10-at-07-54-15.jpg' border='0' alt='Whats-App-Image-2024-03-10-at-07-54-15'/></a> 
 
 
  ## Segundo punto
@@ -127,7 +127,7 @@ elif (primer_real+segundo_real) == tercer_real:
 Vocales=["a","e","i","o","u"]
 Consonantes= ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
 
-# Leer una letra cauqluiera
+# Leer una letra cualquiera
 letra = input("ingrese una letra: ")
 
 # Determinar si la letra hace parte del conjunto Vocales
