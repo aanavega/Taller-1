@@ -1,5 +1,8 @@
+# Leer un numero real, la distancia
 Distancia:float
 Distancia = float(input("Ingrese una distancia en metros: "))
+
+# Asignar y realizar la operacion determinada para cada caso
 Tiempo_Luz= Distancia/299792458
 Tiempo_Sonido = Distancia/343.2
 Tiempo_Vehiculo_Comercial = Distancia/141.111
