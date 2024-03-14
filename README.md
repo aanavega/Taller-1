@@ -13,7 +13,7 @@ Realizado por Daniel Santiago Barrera y Ana Sofia Vega; a continuacion el taller
 ## Primer punto:
 Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
 
-<a href='https://postimg.cc/5QggpvfW' target='_blank'><img src='https://i.postimg.cc/5QggpvfW/Whats-App-Image-2024-03-10-at-07-54-15.jpg' border='0' alt='Whats-App-Image-2024-03-10-at-07-54-15'/></a> 
+[![Whats-App-Image-2024-03-10-at-07-54-15.jpg](https://i.postimg.cc/6TJPWLSq/Whats-App-Image-2024-03-10-at-07-54-15.jpg)](https://postimg.cc/5QggpvfW)
 
 
  ## Segundo punto
