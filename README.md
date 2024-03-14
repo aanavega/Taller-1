@@ -17,7 +17,7 @@ Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el 
  ## Segundo punto
  Realice un programa que lea tres números reales y determine cuál es el mayor.
 
- ```phyton
+ ```Python
     # Determinar que ingrese tres numeros reales
       primer_numero:float
       segundo_numero:float
@@ -46,7 +46,7 @@ Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el 
  ## Tercer punto
  Realice un programa que lea un número entero y determine si es par o impar.
 
-```phyton
+```Python
 numero_real : int
 numero_real = int(input("Ingrese un numero real: "))
 if ((numero_real) % 2) == 0 :
@@ -64,7 +64,7 @@ else:
  ## Cuarto punto
  Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
 
-```phyton
+```Python
 primer_numero: float 
 primer_numero = float(input("Ingrese un numero real: "))
 segundo_numero: float 
@@ -83,7 +83,7 @@ else:
  ## Quinto punto
  Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 
-```phyton
+```Python
 primer_real: float 
 primer_real = float(input("Ingrese un primer numero real: "))
 segundo_real: float 
@@ -106,7 +106,7 @@ elif (primer_real+segundo_real) == tercer_real:
  ## Sexto punto
  Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
 
-```phyton
+```Python
 Vocales=["a","e","i","o","u"]
 Consonantes= ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
 letra = input("ingrese una letra: ")
@@ -136,7 +136,7 @@ Escriba un programa que pida 5 números reales y calcule las siguientes operacio
 - La potencia del mayor número elevado al menor número
 - La raíz cúbica del menor número
 
-```phyton
+```Python
 Primer_numero: int
 Segundo_numero : int
 Tercer_numero : int
@@ -255,7 +255,7 @@ print(" La raiz cubica del menor numero es: " + str(raiz))
  ## Octavo punto
  Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
 
- ```phyton
+ ```Python
 Frecuencia_hz: float
 Frecuencia_hz = float(input("Ingrese una frecuencia de onda en hz: "))
 
@@ -299,7 +299,7 @@ elif 30*(10**3)> Frecuencia_hz:
 ## Noveno punto
 Escriba un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.
 
-```phyton
+```Python
 paises = ["canada" , "estados unidos", "brasil" , "mexico", "argentina", "ecuador" , "venezuela", "colombia", "republica dominicana", "costa rica", "cuba", "puerto rico", "peru" , "chile" , "panama", "uruguay", "paraguay", "bolivia" , "panama", "guatemala" , "nicaragua"]
 nombre_pais = input("Ingrese el nombre de un pais de America en  minusculas: ")
 
@@ -362,7 +362,7 @@ Escriba un programa que dada una distancia calcule:
 - El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
 - El tiempo que le tomaría a Bolt recorrer la distancia.
 
-```phyton
+```Python
 Distancia:float
 Distancia = float(input("Ingrese una distancia en metros: "))
 Tiempo_Luz= Distancia/299792458
