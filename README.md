@@ -18,6 +18,7 @@ Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el 
  Realice un programa que lea tres números reales y determine cuál es el mayor.
 
  ```phyton
+
 primer_numero:float
 segundo_numero:float
 tercer_numero:float
@@ -32,6 +33,7 @@ elif tercer_numero > primer_numero and tercer_numero > segundo_numero:
            print("El numero " + str(tercer_numero) + " es el numero mayor")
 
  ```
+
  - Explicacion:
    1) Definimos las tres variables, tres numeros reales (del tipo float).
    2) Indicamos los condicionales con desigualdades, con el fin de comparar cada uno de los numeros.
@@ -43,15 +45,36 @@ elif tercer_numero > primer_numero and tercer_numero > segundo_numero:
 
  ## Tercer punto
  Realice un programa que lea un número entero y determine si es par o impar.
+
+```phyton
+numero_real : int
+numero_real = int(input("Ingrese un numero real: "))
+if ((numero_real) % 2) == 0 :
+    print("El numero " + str(numero_real) + " es par")
+else:
+    print("El numero " + str(numero_real) + " es impar")
  
  - Explicacion:
    1) Definimos la variable, en este caso, un numero n entero (del tipo int).
    2) Si el residuo de este numero (n) entre 2 es 0, el numero es par.
    3) Si no es 0, es impar.
 
+ ```
+
  ## Cuarto punto
  Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
- 
+
+```phyton
+primer_numero: float 
+primer_numero = float(input("Ingrese un numero real: "))
+segundo_numero: float 
+segundo_numero = float(input("Ingrese otro numero real: "))
+if (primer_numero%segundo_numero) == 0:
+    print("El numero " + str(primer_numero)+ " es multiplo de " + str(segundo_numero))
+else:
+    print("El numero " + str(primer_numero)+ " no es multiplo de " + str(segundo_numero))
+```
+
  - Explicacion:
    1) Definimos las dos variables, dos numeros reales (del tipo float).
    2) Hacemos un condicional, con el fin de definir si el residuo del primer numero entre el segundo numero es 0.
@@ -59,7 +82,22 @@ elif tercer_numero > primer_numero and tercer_numero > segundo_numero:
   
  ## Quinto punto
  Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
- 
+
+```phyton
+primer_real: float 
+primer_real = float(input("Ingrese un primer numero real: "))
+segundo_real: float 
+segundo_real = float(input("Ingrese un segundo numero real: "))
+tercer_real: float
+tercer_real = float(input("Ingrese un tercer numero real: "))
+if (primer_real+segundo_real) > tercer_real:
+    print("La suma de los dos primeros numeros es mayor que " + str(tercer_real))
+elif (primer_real+segundo_real) < tercer_real:
+        print("La suma de los dos primeros numeros es menor que " + str(tercer_real))
+elif (primer_real+segundo_real) == tercer_real:
+      print("La suma de los dos primeros numeros es igual a " + str(tercer_real))
+```
+
  - Explicacion:
    1) Definimos las tres variables, tres numero reales (del tipo float).
    2) Hacemos una serie de condicionales teniendo en cuenta la suma de los dos primeros numeros.
@@ -67,6 +105,16 @@ elif tercer_numero > primer_numero and tercer_numero > segundo_numero:
 
  ## Sexto punto
  Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
+
+```phyton
+Vocales=["a","e","i","o","u"]
+Consonantes= ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
+letra = input("ingrese una letra: ")
+if letra in Vocales:
+    print("La letra " + str(letra)+ " es una vocal")
+elif x in Consonantes:
+        print("La letra " + str(letra)+ " es consonante")
+```
  
  - Explicacion:
    1) Definimos dos conjuntos: el conjunto vocales y el conjunto consonantes; y a su vez, definimos los elementos que los componen respectivamente.
@@ -88,6 +136,113 @@ Escriba un programa que pida 5 números reales y calcule las siguientes operacio
 - La potencia del mayor número elevado al menor número
 - La raíz cúbica del menor número
 
+```phyton
+Primer_numero: int
+Segundo_numero : int
+Tercer_numero : int
+Cuarto_numero: int
+Quinto_numero : int
+mayor_numero:int
+menor_numero:int
+potencia:int
+raiz:int
+Primer_numero= int(input("Ingrese su primer numero real: "))
+Segundo_numero= int(input("Ingrese su segundo numero real: "))
+Tercer_numero= int(input("Ingrese su Tercer numero real: "))
+Cuarto_numero= int(input("Ingrese su Cuarto numero real: "))
+Quinto_numero= int(input("Ingrese su Quinto numero real: "))
+
+# Sacar promedio
+Promedio= ((Primer_numero+Segundo_numero+Tercer_numero+Cuarto_numero+Quinto_numero)/5)
+print("El promedio de los numeros ingresados es: " + str(Promedio))
+
+# Sacar promedio multiplicativo
+Promedio_Multiplicativo= ((Primer_numero*Segundo_numero*Tercer_numero*Cuarto_numero*Quinto_numero)**(1/5))
+print("El promedio multiplicativo de los numeros ingresados es: " + str(Promedio_Multiplicativo))
+
+# Ordenar de manera ascedente y descendente cumpliendo el caso donde 1 > resto de numeros 'No hubo tiempo :('
+if Primer_numero > Segundo_numero and Segundo_numero > Tercer_numero and Tercer_numero > Cuarto_numero and Cuarto_numero > Quinto_numero: #1>2>3>4>5
+    print("Los numeros ordenados de forma descendente van: " +str(Primer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Tercer_numero)+ ","+ str( Cuarto_numero)+ ","+ str(Quinto_numero)+ ".")
+    print("Los numeros ordenados de forma ascendente van: "+ str(Quinto_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Primer_numero)+".")
+elif Primer_numero > Segundo_numero and Segundo_numero > Tercer_numero and  Tercer_numero > Quinto_numero and Quinto_numero > Cuarto_numero:#1>2>3>5>4
+    print("Los numeros ordenados de forma descendente van: " +str(Primer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Tercer_numero)+ ","+ str(Quinto_numero)+ ","+ str(Cuarto_numero)+ ".")
+    print("Los numeros ordenados de forma ascendente van: "+ str(Cuarto_numero)+ ","+ str(Quinto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Primer_numero)+".") 
+elif Primer_numero > Segundo_numero and Segundo_numero > Cuarto_numero and Cuarto_numero > Quinto_numero and Quinto_numero > Tercer_numero:#1>2>4>5>3
+    print("Los numeros ordenados de forma ascendente van: " +str(Tercer_numero)+ ","+ str(Quinto_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Quinto_numero)+ ","+ str(Tercer_numero)+ ".")
+elif Primer_numero > Segundo_numero and Segundo_numero >  Cuarto_numero and Cuarto_numero > Tercer_numero and Tercer_numero > Quinto_numero:#1>2>4>3>5
+    print("Los numeros ordenados de forma ascendente van: " +str(Quinto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Quinto_numero)+ ".")
+elif Primer_numero > Segundo_numero and Segundo_numero > Quinto_numero and Quinto_numero > Tercer_numero and Tercer_numero > Cuarto_numero:#1>2>5>3>4
+    print("Los numeros ordenados de forma ascendente van: " +str(Cuarto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Quinto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Quinto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Cuarto_numero)+ ".")
+elif Primer_numero > Segundo_numero and Segundo_numero > Quinto_numero and Quinto_numero > Cuarto_numero and Cuarto_numero > Tercer_numero:#1>2>5>4>5
+    print("Los numeros ordenados de forma ascendente van: " +str(Cuarto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Quinto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Quinto_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Quinto_numero)+ ".")
+elif Primer_numero > Tercer_numero and Tercer_numero > Segundo_numero and Segundo_numero > Cuarto_numero and Cuarto_numero > Quinto_numero:#1>3>2>4>5:
+    print("Los numeros ordenados de forma ascendente van: " +str(Quinto_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Tercer_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Tercer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Quinto_numero)+ ".") 
+elif Primer_numero > Tercer_numero and Tercer_numero > Segundo_numero and Segundo_numero > Quinto_numero and Quinto_numero > Cuarto_numero:#1>3>2>5>4
+    print("Los numeros ordenados de forma ascendente van: " +str(Cuarto_numero)+ ","+ str(Quinto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Tercer_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Tercer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Quinto_numero)+ ","+ str(Cuarto_numero)+ ".")
+elif Primer_numero > Tercer_numero and Tercer_numero > Cuarto_numero and Cuarto_numero > Segundo_numero and Segundo_numero > Quinto_numero: #1>3>4>2>5
+    print("Los numeros ordenados de forma ascendente van: " +str(Quinto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Tercer_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Quinto_numero)+ ".")
+elif Primer_numero > Tercer_numero and Tercer_numero > Cuarto_numero and Cuarto_numero >Quinto_numero and Quinto_numero > Segundo_numero: #1>3>4>5>2
+    print("Los numeros ordenados de forma ascendente van: " +str(Segundo_numero)+ ","+ str(Quinto_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Tercer_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Quinto_numero)+ ","+ str(Segundo_numero)+ ".")
+elif Primer_numero > Tercer_numero  and Tercer_numero > Quinto_numero and Quinto_numero > Cuarto_numero and Cuarto_numero > Segundo_numero: #1>3>5>4>2
+    print("Los numeros ordenados de forma ascendente van: " +str(Segundo_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Quinto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Tercer_numero)+ ","+ str(Quinto_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Segundo_numero)+ ".")
+elif Primer_numero > Tercer_numero and Tercer_numero > Quinto_numero and Quinto_numero > Segundo_numero and Segundo_numero > Cuarto_numero: # 1>3>5>2>4
+    print("Los numeros ordenados de forma ascendente van: " +str(Cuarto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Quinto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Tercer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Segundo_numero)+ ","+ str(Cuarto_numero)+ ".")
+elif Primer_numero > Cuarto_numero and Cuarto_numero > Tercer_numero and Tercer_numero > Segundo_numero and Segundo_numero > Quinto_numero: #1>4>3>2>5
+    print("Los numeros ordenados de forma ascendente van: " +str(Quinto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Tercer_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Quinto_numero)+ ".")
+elif Primer_numero > Cuarto_numero and Cuarto_numero > Tercer_numero and Tercer_numero > Quinto_numero  and Quinto_numero  >  Segundo_numero:
+    print("Los numeros ordenados de forma ascendente van: " +str(Segundo_numero)+ ","+ str(Quinto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Quinto_numero)+ ","+ str(Segundo_numero)+ ".")
+elif Primer_numero > Cuarto_numero and Cuarto_numero > Segundo_numero and Segundo_numero > Tercer_numero and Tercer_numero > Quinto_numero:
+    print("Los numeros ordenados de forma ascendente van: " +str(Quinto_numero)+ ","+ str(Tercer_numero)+ ","+ str(Segundo_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Tercer_numero)+ ","+ str(Quinto_numero)+ ".")
+elif Primer_numero > Cuarto_numero and Cuarto_numero > Segundo_numero and Segundo_numero > Quinto_numero and Quinto_numero > Tercer_numero:
+    print("Los numeros ordenados de forma ascendente van: " +str(Tercer_numero)+ ","+ str(Quinto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Primer_numero)+ ".")
+    print("Los numeros ordenados de forma descendente van: " + str(Primer_numero)+ ","+ str(Cuarto_numero)+ ","+ str(Segundo_numero)+ ","+ str(Quinto_numero)+ ","+ str(Tercer_numero)+ ".")
+
+# Determinar cual de los cinco numeros es el mayor
+if Primer_numero>Segundo_numero and Primer_numero>Tercer_numero and Primer_numero>Cuarto_numero and Primer_numero>Quinto_numero:
+    mayor_numero= Primer_numero
+elif Segundo_numero>Primer_numero and Segundo_numero>Tercer_numero and Segundo_numero>Cuarto_numero and Segundo_numero>Quinto_numero:
+    mayor_numero= Segundo_numero
+elif Tercer_numero>Primer_numero and Tercer_numero>Segundo_numero and Tercer_numero>Cuarto_numero and Tercer_numero>Quinto_numero:
+    mayor_numero= Tercer_numero
+elif Cuarto_numero>Primer_numero and Cuarto_numero>Segundo_numero and Cuarto_numero>Cuarto_numero and Cuarto_numero>Quinto_numero:
+    mayor_numero= Cuarto_numero
+elif Quinto_numero>Primer_numero and Quinto_numero>Segundo_numero and Quinto_numero>Cuarto_numero and Quinto_numero>Quinto_numero:
+        mayor_numero= Quinto_numero
+
+# Determinar cual de los cinco numeros es el menor
+if Primer_numero<Segundo_numero and Primer_numero<Tercer_numero and Primer_numero<Cuarto_numero and Primer_numero<Quinto_numero:
+    menor_numero= Primer_numero
+elif Segundo_numero<Primer_numero and Segundo_numero<Tercer_numero and Segundo_numero<Cuarto_numero and Segundo_numero<Quinto_numero:
+    menor_numero= Segundo_numero
+elif Tercer_numero<Primer_numero and Tercer_numero<Segundo_numero and Tercer_numero<Cuarto_numero and Tercer_numero<Quinto_numero:
+    menor_numero= Tercer_numero
+elif Cuarto_numero<Primer_numero and Cuarto_numero<Segundo_numero and Cuarto_numero<Tercer_numero and Cuarto_numero<Quinto_numero:
+    menor_numero= Cuarto_numero
+elif Quinto_numero<Primer_numero and Quinto_numero<Segundo_numero and Quinto_numero<Tercer_numero and Quinto_numero<Cuarto_numero:
+    menor_numero= Quinto_numero
+
+# Sacar la potencia del mayor numero elevado al menor numero
+potencia = (mayor_numero**(menor_numero))
+print(" La potencia del mayor numero elevado a el menor numero es: " + str(potencia))
+
+# Sacar la raiz cubica del menor numero
+raiz = (menor_numero**(1/3))                
+print(" La raiz cubica del menor numero es: " + str(raiz))
+```
+
    - Explicacion:
      1) Definimos las 5 variables, 5 numeros reales (del tipo float).
      2) Hacemos un condicional para definir el promedio de las variables ingresadas:  la suma de estas entre el numero de datos.
@@ -99,6 +254,42 @@ Escriba un programa que pida 5 números reales y calcule las siguientes operacio
  
  ## Octavo punto
  Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
+
+ ```phyton
+Frecuencia_hz: float
+Frecuencia_hz = float(input("Ingrese una frecuencia de onda en hz: "))
+
+if Frecuencia_hz > 30.0*(10**18):
+    print('Se encuentra en el espectro electromagnetico de "rayos gamma"')
+elif 30.0*(10**18)> Frecuencia_hz > 30.0*(10**15):
+    print('Se encuentra en el espectro electromagnetico de "Rayos x"')
+elif 30.0*(10**15)> Frecuencia_hz > 1.5*(10**15):
+    print('Se encuentra en el espectro electromagnetico de "Ultravioleta extremo"')
+elif 1.5*(10**15)> Frecuencia_hz > 7.89*(10**14):
+    print('Se encuentra en el espectro electromagnetico de "Ultravioleta cercano"')
+elif 7.89*(10**14)> Frecuencia_hz > 384*(10**12):
+    print('Se encuentra en el espectro electromagnetico de "Espectro visible"')
+elif 384*(10**12)> Frecuencia_hz > 120*(10**12):
+    print('Se encuentra en el espectro electromagnetico de "Infrarrojo cercano"')
+elif 120*(10**12)> Frecuencia_hz > 6.00*(10**12):
+    print('Se encuentra en el espectro electromagnetico de "Infrarrojo mediano"')
+elif 6.00*(10**12)> Frecuencia_hz > 300*(10**9):
+    print('Se encuentra en el espectro electromagnetico de "Infrarrojo lejano/sublumétrico"')
+elif 300*(10**9)> Frecuencia_hz > 3*(10**8):
+    print('Se encuentra en el espectro electromagnetico de "Microondas"')
+elif 3*(10**8)> Frecuencia_hz > 300*(10**6):
+    print('Se encuentra en el espectro electromagnetico de "Utra alta Frecuencia-Radio"')
+elif 300*(10**6)> Frecuencia_hz > 30*(10**6):
+    print('Se encuentra en el espectro electromagnetico de "Muy alta Frecuencia-Radio"')
+elif 30*(10**6)> Frecuencia_hz > 1.7*(10**6):
+    print('Se encuentra en el espectro electromagnetico de "Onda Corta - Radio"')
+elif 1.7*(10**6)> Frecuencia_hz > 650*(10**3):
+    print('Se encuentra en el espectro electromagnetico de "Onda Media - Radio"')
+elif 650*(10**3)> Frecuencia_hz > 30*(10**3):
+    print('Se encuentra en el espectro electromagnetico de "Onda Larga - Radio"')
+elif 30*(10**3)> Frecuencia_hz:
+    print('Se encuentra en el espectro electromagnetico de "Muy baja frecuencia - radio"')
+ ```
  
  - Explicacion:
    1) Definimos una variable (la frecuencia en hz).
@@ -107,6 +298,56 @@ Escriba un programa que pida 5 números reales y calcule las siguientes operacio
 
 ## Noveno punto
 Escriba un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.
+
+```phyton
+paises = ["canada" , "estados unidos", "brasil" , "mexico", "argentina", "ecuador" , "venezuela", "colombia", "republica dominicana", "costa rica", "cuba", "puerto rico", "peru" , "chile" , "panama", "uruguay", "paraguay", "bolivia" , "panama", "guatemala" , "nicaragua"]
+nombre_pais = input("Ingrese el nombre de un pais de America en  minusculas: ")
+
+if nombre_pais in paises:
+    if nombre_pais == "mexico":
+        print("ciudad de mexico")
+    elif nombre_pais == "canada":
+        print("ottawa")
+    elif nombre_pais == "estados unidos":
+        print("washignton")
+    elif nombre_pais == "brasil":
+        print("brasilia")
+    elif nombre_pais == "argentina":
+        print("buenos aires")
+    elif nombre_pais == "ecuador":
+        print("quito")
+    elif nombre_pais == "venezuela":
+        print("caracas")
+    elif nombre_pais ==  "colombia":
+        print("bogota")
+    elif nombre_pais == "republica dominicana":
+        print("santo domingo")
+    elif nombre_pais == "costa rica":
+        print("san jose")
+    elif nombre_pais == "cuba":
+        print("la habana")
+    elif nombre_pais == "peru":
+        print("lima")
+    elif nombre_pais == "paraguay":
+        print("asuncion")
+    elif nombre_pais == "chile":
+        print("santiago")
+    elif nombre_pais == "uruguay":
+        print("montevideo")
+    elif nombre_pais == "bolivia":
+        print("la paz")
+    elif nombre_pais == "panama":
+        print("panama")
+    elif nombre_pais == "guatemala":
+        print("guatemala")
+    elif nombre_pais == "nicaragua":
+        print("managua")
+    elif nombre_pais == "el salvador":
+        print("el salvador")
+
+else:
+    print("El pais no pertenece a America")
+ ```
 
 - Explicacion:
   1) Definimos un conjunto: el conjunto paises; y a su vez, y los elementos que lo compononen (paises de America).
@@ -120,6 +361,19 @@ Escriba un programa que dada una distancia calcule:
 - El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
 - El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
 - El tiempo que le tomaría a Bolt recorrer la distancia.
+
+```phyton
+Distancia:float
+Distancia = float(input("Ingrese una distancia en metros: "))
+Tiempo_Luz= Distancia/299792458
+Tiempo_Sonido = Distancia/343.2
+Tiempo_Vehiculo_Comercial = Distancia/141.111
+Tiempo_Usaint_Bolt = Distancia/11.6667
+print("El tiempo que le tomaría a la luz recorrer la distancia: " + str(Tiempo_Luz) + " Seg")
+print("El tiempo que le tomaría al sonido (en el aire) recorrer la distancia: " + str(Tiempo_Sonido)  + " Seg")
+print("El tiempo que le tomaría al vehiculo comercial más veloz (SSC Tuatara) recorrer la distancia: " + str(Tiempo_Vehiculo_Comercial)  + " Seg")
+print("El tiempo que le tomaría a Bolt recorrer la distancia: " + str(Tiempo_Usaint_Bolt) + " Seg" )
+```
 
  - Explicacion:
    1) Definimos las variables (la distancia) un numero real (del tipo float) en metros.
