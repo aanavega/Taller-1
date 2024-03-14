@@ -18,19 +18,19 @@ Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el 
  Realice un programa que lea tres números reales y determine cuál es el mayor.
 
  ```phyton
-
-primer_numero:float
-segundo_numero:float
-tercer_numero:float
-primer_numero = input("Digite un primer numero real: ")
-segundo_numero = input("Digite un segundo numero real: ")
-tercer_numero = input("Digite un tercer numero real: ")
-if primer_numero > segundo_numero and primer_numero > tercer_numero:
-    print("El numero " + str(primer_numero) + " es el numero mayor")
-elif segundo_numero > primer_numero and segundo_numero > tercer_numero:
-        print("El numero " + str(segundo_numero) + " es el numero mayor")
-elif tercer_numero > primer_numero and tercer_numero > segundo_numero:
-           print("El numero " + str(tercer_numero) + " es el numero mayor")
+    # Determinar que ingrese tres numeros reales
+      primer_numero:float
+      segundo_numero:float
+      tercer_numero:float
+      primer_numero = input("Digite un primer numero real: ")
+      segundo_numero = input("Digite un segundo numero real: ")
+      tercer_numero = input("Digite un tercer numero real: ")
+      if primer_numero > segundo_numero and primer_numero > tercer_numero:
+          print("El numero " + str(primer_numero) + " es el numero mayor")
+      elif segundo_numero > primer_numero and segundo_numero > tercer_numero:
+             print("El numero " + str(segundo_numero) + " es el numero mayor")
+      elif tercer_numero > primer_numero and tercer_numero > segundo_numero:
+                 print("El numero " + str(tercer_numero) + " es el numero mayor")
 
  ```
 
@@ -54,12 +54,12 @@ if ((numero_real) % 2) == 0 :
 else:
     print("El numero " + str(numero_real) + " es impar")
  
+ ```
+
  - Explicacion:
    1) Definimos la variable, en este caso, un numero n entero (del tipo int).
    2) Si el residuo de este numero (n) entre 2 es 0, el numero es par.
    3) Si no es 0, es impar.
-
- ```
 
  ## Cuarto punto
  Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
