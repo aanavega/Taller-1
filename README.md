@@ -31,7 +31,7 @@ elif segundo_numero > primer_numero and segundo_numero > tercer_numero:
 elif tercer_numero > primer_numero and tercer_numero > segundo_numero:
            print("El numero " + str(tercer_numero) + " es el numero mayor")
 
- 
+ ```
  - Explicacion:
    1) Definimos las tres variables, tres numeros reales (del tipo float).
    2) Indicamos los condicionales con desigualdades, con el fin de comparar cada uno de los numeros.
